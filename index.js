@@ -30,7 +30,6 @@ window.addEventListener('hashchange', function() {
 
 function hashchange() {
     var hashNum = ~~window.location.hash.split('#')[1];
-    console.log(hashNum, currentSlideNum);
     if(hashNum < 1) {
         currentSlideNum = 1;
     } else if(hashNum > slides.length) {
