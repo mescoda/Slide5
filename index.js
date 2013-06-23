@@ -51,12 +51,17 @@ function back() {
 }
 
 function forward() {
-    var currentSlide = document.querySelector('.current');
-    if(currentSlideNum >= slides.length) {
-        return;
+    var currentSlide = document.querySelector('.current'),
+        currentToShow = currentSlide.querySelector('.to-show');
+    if(currentToShow) {
+        currentToShow.classList.remove('to-show');
+    } else {
+        if(currentSlideNum >= slides.length) {
+            return;
+        }
+        currentSlideNum++;
+        setClassName();
     }
-    currentSlideNum++;
-    setClassName();
 }
 
 function setClassName() {
