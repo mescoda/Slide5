@@ -1,8 +1,4 @@
-/*
-set slide width height
-responsive
-use flex instead of positon
- */
+;(function() {
 
 var currentSlideNum = 1,
     slides;
@@ -81,3 +77,5 @@ function setClassName() {
     nextSlide && nextSlide.classList.add('next');
     window.location.hash = currentSlideNum;
 }
+
+})();
