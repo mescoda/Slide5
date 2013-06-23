@@ -66,6 +66,10 @@ html, body {
     -webkit-flex-flow: row nowrap;
     -webkit-justify-content: center;
     -webkit-align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .slider {
     width: 900px;
@@ -102,6 +106,7 @@ html, body {
     opacity: 0;
     -webkit-transform: translate(-100%, 0);
     -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
 }
 .slide.next {
@@ -109,6 +114,7 @@ html, body {
     opacity: 0;
     -webkit-transform: translate(100%, 0);
     -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
     transform: translate(100%, 0);
 }
 
@@ -278,6 +284,9 @@ html, body {
     display: -webkit-flex;
     -webkit-flex-flow: column nowrap;
     -webkit-justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 .slide.quote .slide-content {
     width: 90%;
@@ -289,6 +298,9 @@ html, body {
     display: -webkit-flex;
     -webkit-flex-flow: row nowrap;
     -webkit-align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 .h-double-spacearound-slide-content {
@@ -298,6 +310,10 @@ html, body {
     -webkit-flex-flow: row nowrap;
     -webkit-justify-content: space-around;
     -webkit-align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 .h-double-spacearound-slide-content > * {
     width: 45%;
@@ -338,6 +354,10 @@ html, body {
     -webkit-flex-flow: row nowrap;
     -webkit-justify-content: center;
     -webkit-align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .slide.ending h1 {
     font-size:70px;

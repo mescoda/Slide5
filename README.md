@@ -5,5 +5,7 @@ Online Slide Deck Framework
 ## Browser suppport
 
 * Chrome
-* Firefox
-* IE10+
+
+Firefox and IE10+ are not supported because of Flexbox
+
+## demo
