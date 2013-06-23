@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* base */
+html, body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border: 0;
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+h1, h2, h3, h4 {
+    font-size: 100%;
+}
+i, em {
+    font-style: normal;
+    font-weight: normal;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body, button, input, select, textarea { 
+    font: 12px/1.5 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft YaHei', sans-serif;
+}
+body {
+    background-color: #DDD;
+    background-image: -webkit-radial-gradient(ellipse, #F0F0F0, #BEBEBE);
+    background-image: -moz-radial-gradient(ellipse, #F0F0F0, #BEBEBE);
+    background-image: -ms-radial-gradient(ellipse, #F0F0F0, #BEBEBE);
+    background-image: radial-gradient(ellipse, #F0F0F0, #BEBEBE);
+    overflow:hidden;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* slide5 */
+a {
+
+}
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    -webkit-flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.slider {
+    width: 900px;
+    height: 650px;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.slide.current {
+    display: block;
+}
+.slide.prev {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+.slide.next {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+
+/* slide5-mod */
+
+.slide {
+    padding: 40px 60px;
+    color: #666;
+}
+.slide header {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.slide header h1 {
+
+}
+.slide > div {
+
+}
